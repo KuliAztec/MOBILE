@@ -6,4 +6,4 @@
 <img src="Gambar/sakrinsut1.jpg" width="300" alt="P1">  
 
 # P2
-<img src="Gambar/sakrinsut2.jpg" width="300" alt="P2">
+<img src="Gambar/GIF2.gif" width="300" alt="P2">
