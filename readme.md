@@ -7,3 +7,6 @@
 
 # P2
 <img src="Gambar/GIF2.gif" width="300" alt="P2">
+
+# P3
+<img src="Gambar/GIF3.gif" width="300" alt="P3">
