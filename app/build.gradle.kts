@@ -57,5 +57,5 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.activity.ktx)
 
-    
+    implementation("com.github.bumptech.glide:glide:5.0.5")
 }

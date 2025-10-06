@@ -13,7 +13,7 @@ class Halaman2Activity : AppCompatActivity() {
 
     private val latitude = "-7.429427"
     private val longitude = "109.338082"
-    private val gMapsUrl = "http://maps.google.com/maps?q=loc"
+    private val gMapsUrl = "https://www.google.com/maps/search/?api=1&query="
     private val packageMaps = "com.google.android.apps.maps"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +44,10 @@ class Halaman2Activity : AppCompatActivity() {
             it.imgIcon.setImageResource(R.drawable.ic_phone)
             it.tvLayout.setText(R.string.telepon)
         }
+        binding.layoutBuku.let{
+            it.imgIcon.setImageResource(R.drawable.ic_book)
+            it.tvLayout.setText("Koleksi Buku")
+        }
     }
 
     private fun initListener(){
@@ -68,6 +72,9 @@ class Halaman2Activity : AppCompatActivity() {
                 data = "tel:${getString(R.string.telepon)}".toUri()
             }
             startActivity(intent)
+        }
+        binding.layoutBuku.root.setOnClickListener{
+            startActivity(Intent(this, DaftarBukuActivity::class.java))
         }
         binding.btnBack.setOnClickListener{
             finish()
